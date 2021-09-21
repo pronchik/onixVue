@@ -79,27 +79,27 @@
 			<nav class="head-sidebar-menu">
 				<ul>
                     <li id="first-li">
-                        <a href="#">
+                        <a href="#" onclick="tasks()">
                             Tasks
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#" onclick="kanban()">
                             Kanban
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#" onclick="activity()">
                             Activity
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#" onclick="calendar()">
                             Calendar
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#" onclick="files()">
                             Files
                         </a>
                     </li>
@@ -108,7 +108,12 @@
 		</div>
 
 		<div class="content">
-			<div id="day"><span>Today</span></div>
+
+			<div id ="day"><span>Today</span></div>
+			<div id ="kanban"><span>Kanban</span></div>
+			<div id ="activity"><span>Activity</span></div>
+			<div id ="calendar"><span>Calendar</span></div>
+			<div id ="files"><span>Files</span></div>
 			<div class="message">
 				<div class="icon"></div>
 				<div class="text-message">Darika Samak mark as done Listing on 
@@ -140,7 +145,6 @@
 				<div class="photo"></div>
 				<div class="photo"></div>
 			</div>
-
 
 			
 		</div>

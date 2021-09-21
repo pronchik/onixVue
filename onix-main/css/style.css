@@ -363,6 +363,7 @@
    }
 
    #day{
+      display: none;
       opacity: 0.5;
       font-family: Helvetica;
       font-size: 0.9114583333333334vw;
@@ -371,11 +372,77 @@
       margin-top: 3%;
       margin-left: 4%;
    }
+   #day.active1{
+      display: block;
+   }
+
+   #kanban{
+      display: none;
+      opacity: 0.5;
+      font-family: Helvetica;
+      font-size: 0.9114583333333334vw;
+      color: #131313;
+      text-transform: uppercase;
+      margin-top: 3%;
+      margin-left: 4%;
+   }
+   #kanban.active1{
+      display: block;
+   }
+   #activity{
+      display: none;
+      opacity: 0.5;
+      font-family: Helvetica;
+      font-size: 0.9114583333333334vw;
+      color: #131313;
+      text-transform: uppercase;
+      margin-top: 3%;
+      margin-left: 4%;
+   }
+   #activity.active1{
+      display: block;
+   }
+
+   #files{
+      display: none;
+      opacity: 0.5;
+      font-family: Helvetica;
+      font-size: 0.9114583333333334vw;
+      color: #131313;
+      text-transform: uppercase;
+      margin-top: 3%;
+      margin-left: 4%;
+   }
+   #files.active1{
+      display: block;
+   }
+   #calendar{
+      display: none;
+      opacity: 0.5;
+      font-family: Helvetica;
+      font-size: 0.9114583333333334vw;
+      color: #131313;
+      text-transform: uppercase;
+      margin-top: 3%;
+      margin-left: 4%;
+   }
+   #calendar.active1{
+      display: block;
+   }
    .message{
       width: 100%;
       height: 8.3%;
       margin-top: 3.6%;
+      display: none;
+   }
+   .message.active1{
       display: flex;
+   }
+   hr{
+      display: none;
+   }
+   hr.active1{
+      display: block;
    }
    .icon{
       margin-left: 4%;
@@ -408,8 +475,11 @@
       height:16.0116448326%;   
       margin-top: 2.74122807018%;
       margin-left: 12.4725877193%;
-      display: flex;
-  
+      display: none;  
+  }
+
+  .tip.active1{
+     display: flex;
   }
   .class{
       width: 94.555353902%;   
@@ -436,6 +506,10 @@
    width: 15.6347717323%;
    height:100%; 
    background: black;
+   display: none;
+}
+.photo.active1{
+   display: block;
 }
 #first-photo{
    margin-left: 0;
@@ -726,15 +800,8 @@
       height: 3000px;
       margin-left: 175px;
    }
-   #day{
-      opacity: 0.5;
-      font-family: Helvetica;
-      font-size: 1.9390581717451523vh;
-      color: #131313;
-      text-transform: uppercase;
-      margin-top: 44px;
-      margin-left: 32px;
-   }
+
+
    .message{
       width: 100%;
       height: 200px;
