@@ -1,48 +1,45 @@
-
 function openmenu(){
-    leftSidebar = document.getElementsByClassName('left-sidebar'),
-    projectName = document.getElementById('project-name'),
-    search = document.getElementById('search'),
-    projectLogo = document.getElementById('project-logo'),
-    headSidebar = document.getElementsByClassName('head-sidebar'),
-    namePosition = document.getElementsByClassName('name-position'),
-    circle = document.getElementsByClassName('circle'),
-    userImg = document.getElementsByClassName('user-img'),
-    statis = document.getElementsByClassName('statis'),
-    menu1 = document.getElementsByClassName('menu1'),
-    menuList = document.getElementsByClassName('menu-list'),
-    menuListIcons = document.getElementsByClassName('menu-list-icons'),
-    content = document.getElementsByClassName('content');
-
+    leftSidebar = document.getElementsByClassName('left-sidebar');
     leftSidebar [0].classList.toggle('active');
-    
+
+    projectName = document.getElementById('project-name');
     projectName.classList.toggle('active');
-  
+
+    search = document.getElementById('search');
     search.classList.toggle('active');
- 
+
+    projectLogo = document.getElementById('project-logo');
     projectLogo.classList.toggle('active');
 
+    headSidebar = document.getElementsByClassName('head-sidebar');
     headSidebar[0].classList.toggle('active');
 
+    namePosition = document.getElementsByClassName('name-position');
     namePosition[0].classList.toggle('active');
 
+    circle = document.getElementsByClassName('circle');
     circle[0].classList.toggle('active');
     circle[1].classList.toggle('active');
     circle[2].classList.toggle('active');
-    
+
+    userImg = document.getElementsByClassName('user-img');
     userImg[0].classList.toggle('active');
 
+    statis = document.getElementsByClassName('statis');
     statis[0].classList.toggle('active');
 
+    menu1 = document.getElementsByClassName('menu1');
     menu1[0].classList.toggle('active');
 
+    menuList = document.getElementsByClassName('menu-list');
     menuList[0].classList.toggle('active');
 
+    menuListIcons = document.getElementsByClassName('menu-list-icons');
     menuListIcons[0].classList.toggle('active');
 
+    content = document.getElementsByClassName('content');
     content[0].classList.toggle('active');
 
-    
 }
 
 function tasks(){
