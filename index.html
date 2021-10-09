@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Onix</title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class = "left-sidebar">
+			<div class="project-logo">
+				<img src="img/Logo@3x.svg" id="project-logo" onclick="openmenu()">
+				<span id="project-name" function= "openmenu()">PROJECTUS</span>
+				<img src="img/Search@3x.svg" id = "search" >
+			</div>
+			
+			<div class="introduction">
+				<img src="img/me.png" class = "user-img" >
+				<div class="name-position">
+					<table>
+                        <tr>
+                            <td id = "user-name">Maksym Pron</td>
+                        </tr>
+                        <tr>
+                            <td id="user-pos">Web-dev</td>
+                        </tr>
+                </table>
+				</div>
+				<div class="circle" id="circle-first"></div>
+				<div class="circle"></div>
+				<div class="circle"></div>
+			</div>
+
+			<div class="left-menu">
+				<table class ="statis">
+					<tr class="count-row">
+						<td>372</td>
+						<td>11</td>
+					</tr>
+					<tr class="tasks-row">
+						<td>Completed Tasks</td>
+						<td>Open Tasks</td>
+					</tr>
+				</table>
+				<span class="menu1">Menu</span>
+				<ul class = "menu-list">
+					<li>Home</li>
+					<li>My Tasks</li>
+					<li id = "last-note">Notifications <div class="notifications"><span>3</span</div></li>
+				</ul>
+				<div class = "menu-list-icons">
+					<div id = "home-img"><img src="img/home.png"></div>
+					<div id="list-img"><img src="img/list.png"></div>
+					<div id="notif-img"><img src="img/notif.png"></div>
+				</div>
+				
+			</div>
+
+		</div>
+		<div class="head-sidebar">
+			<div class="top-head-sidebar">
+				<img src="img/Shapes@2x.png" id="img-shapes">
+				<span id="span-redesign">Website Redesign</span>
+				<div class="etc">
+					<div class="circle-etc" id="first-circle-etc"></div>
+					<div class="circle-etc"></div>
+					<div class="circle-etc"></div>
+				</div>
+				<img src="img/me.png" class="users-photo" id="first-users-photo">
+				<img src="img/me.png" class="users-photo">
+				<img src="img/me.png" class="users-photo">
+				<div class="share">
+					<span>Share</span>
+				</div>
+				<div class="chat">
+					<span>Chat</span>
+				</div>
+			</div>
+			<nav class="head-sidebar-menu">
+				<ul>
+                    <li id="first-li">
+                        <a href="#" onclick="tasks()">
+                            Tasks
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="kanban()">
+                            Kanban
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="activity()">
+                            Activity
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="calendar()">
+                            Calendar
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="files()">
+                            Files
+                        </a>
+                    </li>
+                </ul>
+			</nav>
+		</div>
+
+		<div class="content">
+
+			<div id ="day"><span>Today</span></div>
+			<div id ="kanban"><span>Kanban</span></div>
+			<div id ="activity"><span>Activity</span></div>
+			<div id ="calendar"><span>Calendar</span></div>
+			<div id ="files"><span>Files</span></div>
+			<div class="message">
+				<div class="icon"></div>
+				<div class="text-message">Darika Samak mark as done Listing on 
+					Product Hunt so that we can reach as many potential users</div>
+				<div class= "time-message">8:40 PM</div>
+			</div>
+			<hr>
+			<div class="message">
+				<div class="icon"></div>
+				<div class="text-message">Emilee Simchenko commented on Account for teams and personal in bottom style</div>
+				<div class= "time-message">7:32 PM</div>
+			</div>
+			<hr>
+			<div class="tip">   
+				<div class="class"> <span>
+				  During a project build, it is necessary to evaluate the product design and development against project requirements and outcomes
+				</span></div>
+			</div>  
+			<hr>
+			<div class="message">
+				<div class="icon"></div>
+				<div class="text-message">Darika Samak uploaded 4 files on An option to search in current projects or
+				   in all projects</div>
+				<div class= "time-message">6:02 PM</div>
+			</div>
+			<div class="pictures">
+				<div class="photo" id="first-photo"></div>
+				<div class="photo"></div>
+				<div class="photo"></div>
+				<div class="photo"></div>
+			</div>
+
+			
+		</div>
+		<script src="js/script.js"></script>
+	</body>
+</html>
