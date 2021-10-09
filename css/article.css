@@ -1,5 +1,5 @@
 @media only screen and (min-width: 992px) {
-    article{
+    section{
         display: block;
         background: #FFFFFF;
         border-radius: 8px;  
@@ -165,10 +165,10 @@
     }
 }
 @media only screen and (max-width: 992px){
-    article{
+    section{
         display: none;
      }
-     article.active{
+     section.active{
         display: block;
         background: #FFFFFF;
         border-radius: 8px;  

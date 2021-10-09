@@ -39,8 +39,8 @@ function openmenu(){
   nav = document.querySelectorAll("nav");
   nav[0].classList.toggle('active');
 
-  article = document.querySelectorAll("article");
-  article[0].classList.toggle('active');
+  section = document.querySelectorAll("section");
+  section[0].classList.toggle('active');
 
 }
 
