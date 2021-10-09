@@ -5,17 +5,21 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<title>Onix</title>
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/aside.css">
+		<link rel="stylesheet" href="css/nav.css">
+		<link rel="stylesheet" href="css/article.css">
+		<script src="js/script.js"></script>
 	</head>
 	<body>
-		<div class = "left-sidebar">
+		<aside>
 			<div class="project-logo">
-				<img src="img/Logo@3x.svg" id="project-logo" onclick="openmenu()">
-				<span id="project-name" function= "openmenu()">PROJECTUS</span>
-				<img src="img/Search@3x.svg" id = "search" >
+				<img src="img/Logo@3x.svg" id="project-logo" alt="logo" onclick="openmenu()">
+				<span id="project-name" >PROJECTUS</span>
+				<img src="img/Search@3x.svg" alt="search" id = "search" >
 			</div>
 			
 			<div class="introduction">
-				<img src="img/me.png" class = "user-img" >
+				<img src="img/me.png" class = "user-img" alt="user-img" >
 				<div class="name-position">
 					<table>
                         <tr>
@@ -49,26 +53,25 @@
 					<li id = "last-note">Notifications <div class="notifications"><span>3</span</div></li>
 				</ul>
 				<div class = "menu-list-icons">
-					<div id = "home-img"><img src="img/home.png"></div>
-					<div id="list-img"><img src="img/list.png"></div>
-					<div id="notif-img"><img src="img/notif.png"></div>
+					<div id = "home-img"><img src="img/home.png" alt = "img-home"></div>
+					<div id="list-img"><img src="img/list.png" alt = "img-list"></div>
+					<div id="notif-img"><img src="img/notif.png" alt = "img-notif"></div>
 				</div>
 				
 			</div>
-
-		</div>
-		<div class="head-sidebar">
+		</aside>
+		<nav>
 			<div class="top-head-sidebar">
-				<img src="img/Shapes@2x.png" id="img-shapes">
+				<img src="img/Shapes@2x.png" id="img-shapes" alt = "shapes">
 				<span id="span-redesign">Website Redesign</span>
 				<div class="etc">
 					<div class="circle-etc" id="first-circle-etc"></div>
 					<div class="circle-etc"></div>
 					<div class="circle-etc"></div>
 				</div>
-				<img src="img/me.png" class="users-photo" id="first-users-photo">
-				<img src="img/me.png" class="users-photo">
-				<img src="img/me.png" class="users-photo">
+				<img src="img/me.png" class="users-photo" alt = "img-user" id="first-users-photo">
+				<img src="img/me.png" class="users-photo" alt = "img-user">
+				<img src="img/me.png" class="users-photo" alt = "img-user">
 				<div class="share">
 					<span>Share</span>
 				</div>
@@ -105,10 +108,9 @@
                     </li>
                 </ul>
 			</nav>
-		</div>
+		</nav>
 
-		<div class="content">
-
+		<article>
 			<div id ="day"><span>Today</span></div>
 			<div id ="kanban"><span>Kanban</span></div>
 			<div id ="activity"><span>Activity</span></div>
@@ -147,7 +149,7 @@
 			</div>
 
 			
-		</div>
-		<script src="js/script.js"></script>
+		</article>
+		
 	</body>
 </html>
