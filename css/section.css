@@ -165,10 +165,10 @@
     }
 }
 @media only screen and (max-width: 992px){
-    section{
+    section.active{
         display: none;
      }
-     section.active{
+     section{
         display: block;
         background: #FFFFFF;
         border-radius: 8px;  

@@ -124,12 +124,74 @@
      #first-li{
         margin-left: 0;
      }
+     #select-tasks.active1 {
+        display: block;
+         position: absolute;
+         margin-left: 5px;
+         margin-top: 0px;
+         width: 80px;
+         height: 3px;
+         background: yellow;
+      }
+      #select-tasks {
+         display: none;
+      }
+      
+      #select-kanban.active1 {
+         display: block;
+         position: absolute;
+         margin-left: 85px;
+         margin-top: 0px;
+         width: 80px;
+         height: 3px;
+         background: yellow;
+      }
+      #select-kanban{
+         display: none;
+      }
+      #select-activity.active1 {
+         display: block;
+         position: absolute;
+         margin-left: 165px;
+         margin-top: 0px;
+         width: 80px;
+         height: 3px;
+         background: yellow;
+      }
+      #select-activity{
+         display: none;
+      }
+      #select-calendar.active1 {
+         display: block;
+         position: absolute;
+         margin-left: 245px;
+         margin-top: 0px;
+         width: 90px;
+         height: 3px;
+         background: yellow;
+      }
+      #select-calendar{
+         display: none;
+      }
+      #select-files.active1 {
+         display: block;
+         position: absolute;
+         margin-left: 335px;
+         margin-top: 0px;
+         width: 60px;
+         height: 3px;
+         background: yellow;
+      }
+      #select-files{
+         display: none;
+      }
+
 }
 @media only screen and (max-width: 992px){
-    nav{
+    nav.active{
         display: none;
      }
-     nav.active{
+     nav{
         width: 100%;
         height: 250px;
         background-color:#FFFF;
