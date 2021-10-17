@@ -248,4 +248,9 @@
      margin-top: 20px;
      margin-left: 100px;
   }
+  .photo1{
+   height: 100%;
+   width: 100%;
+   border-radius:5px;
+ } 
 }

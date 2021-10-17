@@ -150,51 +150,57 @@ function myFunction(e) {
 }
 
 function modal(){
-  const modal = document.getElementById("myModal");
+  const modal = document.getElementsByClassName("modal")[0];
 
-// Get the button that opens the modal
-const btn = document.getElementsByClassName("completed-tasks")[0];
-
-// Get the <span> element that closes the modal
-const btnNo = document.getElementsByClassName('no')[0];
-const btnNYes = document.getElementsByClassName('yes')[0];
-
-// When the user clicks on the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
-};
-
-// When the user clicks on <span> (x), close the modal
-btnNo.onclick = function() {
-  modal.style.display = "none";
-};
-
-btnNYes.onclick = function(){
+  const btnNo = document.getElementsByClassName('no')[0];
+  const btnNYes = document.getElementsByClassName('yes')[0];
 
   const numberCompleted = document.getElementsByClassName("number-completed")[0];
   
-
   const numberOpen = document.getElementsByClassName("number-open")[0];
-  
-  if(+numberOpen.innerText <=0){
-    alert("Error");
+
+  modal.style.display = "block";
+
+  btnNo.onclick = function() {
     modal.style.display = "none";
-  }
-  else{
-    numberCompleted.innerText = +numberCompleted.innerText + 1;
-    numberOpen.innerText = +numberOpen.innerText - 1;
-    modal.style.display = "none";
-  }
+  };
+
+  btnNYes.onclick = function(){
+
+    if(+numberOpen.innerText <= 0){
+      alert("Error");
+      modal.style.display = "none";
+    }
+    else{
+      numberCompleted.innerText = +numberCompleted.innerText + 1;
+      numberOpen.innerText = +numberOpen.innerText - 1;
+      modal.style.display = "none";
+    }
   
 };
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-};
 }
+
+function img(){
+  const img = document.getElementsByClassName('photo');
+  const log = document.getElementsByTagName("span")[6];
+  console.log(img);
+
+  img[0].onclick = function(){
+    log.innerText = '0';
+  };
+  img[1].onclick = function(){
+    log.innerText = '1';
+  };
+  img[2].onclick = function(){
+    log.innerText = '2';
+  };
+  img[3].onclick = function(){
+    log.innerText = '3';
+  };
+
+}
+
 
 window.onload = activity;
 
