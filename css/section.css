@@ -87,18 +87,18 @@
      .message.active1{
         display: flex;
      }
-     hr{
-        display: none;
-     }
-     hr.active1{
-        display: block;
-     }
      .icon{
         margin-left: 4%;
         height: 100%;
         width: 5.53%;
         border-radius: 50%;
         background-color:  #CEF9C6;
+     }
+     .icon img{
+        height: 25%;
+        width: 35%;
+        margin-top: 40%;
+        margin-left: 35%;
      }
      .text-message{
         width: 60%;
@@ -163,6 +163,12 @@
     #first-photo{
         margin-left: 0;
     }
+
+    .photo1{
+      height: 100%;
+      width: 100%;
+      border-radius:5px;
+    } 
 }
 @media only screen and (max-width: 992px){
     section.active{

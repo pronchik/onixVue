@@ -35,18 +35,28 @@
 				<div class="circle"></div>
 			</div>
 
+			<div class="statis">
+				<div class="completed-tasks" onclick="modal()">
+					<div class="number-completed">
+						<span>372</span>
+					</div>
+					<div class="completed">
+						<span>Completed tasks</span>
+					</div>
+				</div>
+				<div class="open-tasks">
+					<div class="number-open">
+						<span>11</span>
+					</div>
+					<div class="open">
+						<span>Open Tasks</span>
+					</div>
+				</div>
+			</div>
+
 			<div class="left-menu">
-				<table class ="statis">
-					<tr class="count-row">
-						<td>372</td>
-						<td>11</td>
-					</tr>
-					<tr class="tasks-row">
-						<td>Completed Tasks</td>
-						<td>Open Tasks</td>
-					</tr>
-				</table>
-				<span class="menu1">Menu</span>
+				
+				<div class="menu1"><span >MENU</span></div>
 				<ul class = "menu-list">
 					<li>Home</li>
 					<li>My Tasks</li>
@@ -75,7 +85,7 @@
 				<div class="share">
 					<span>Share</span>
 				</div>
-				<div class="chat">
+				<div class="chat"><img src="img/Combined Shape@1x.svg" alt = "chat">
 					<span>Chat</span>
 				</div>
 			</div>
@@ -107,6 +117,7 @@
                         </a>
                     </li>
                 </ul>
+				
 			</nav>
 			<div id="select-tasks"></div>
 			<div id="select-kanban"></div>
@@ -122,39 +133,49 @@
 			<div id ="calendar"><span>Calendar</span></div>
 			<div id ="files"><span>Files</span></div>
 			<div class="message">
-				<div class="icon"></div>
+				<div class="icon"><img src="img/Icon@3x.svg" alt="checkmark"></div>
 				<div class="text-message">Darika Samak mark as done Listing on 
 					Product Hunt so that we can reach as many potential users</div>
 				<div class= "time-message">8:40 PM</div>
 			</div>
-			<hr>
+			
 			<div class="message">
-				<div class="icon"></div>
+				<div class="icon"><img src="img/Icon@3x.svg" alt="checkmark"></div>
 				<div class="text-message">Emilee Simchenko commented on Account for teams and personal in bottom style</div>
 				<div class= "time-message">7:32 PM</div>
 			</div>
-			<hr>
+			
 			<div class="tip">   
 				<div class="class"> <span>
 				  During a project build, it is necessary to evaluate the product design and development against project requirements and outcomes
 				</span></div>
 			</div>  
-			<hr>
+			
 			<div class="message">
-				<div class="icon"></div>
+				<div class="icon"><img src="img/Icon@3x.svg" alt="checkmark"></div>
 				<div class="text-message">Darika Samak uploaded 4 files on An option to search in current projects or
 				   in all projects</div>
 				<div class= "time-message">6:02 PM</div>
 			</div>
 			<div class="pictures">
-				<div class="photo" id="first-photo"></div>
-				<div class="photo"></div>
-				<div class="photo"></div>
-				<div class="photo"></div>
+				<div class="photo" id="first-photo"><img src="img/1-1.jpg" class="photo1"></div>
+				<div class="photo"><img src="img/1-1.jpg" class="photo1"></div>
+				<div class="photo"><img src="img/1-1.jpg" class="photo1"></div>
+				<div class="photo"><img src="img/1-1.jpg" class="photo1"></div>
 			</div>
-
+			<div id="Cards"></div>
 			
 		</section>
+		<div id="myModal" class="modal">
+
+			<!-- Modal content -->
+			<div class="modal-content">
+			  <p>Are you sure you want to change the number of tasks?</p>
+			  <button class="yes">Yes</button>
+			  <button class="no">No</button>
+			</div>
+		  
+		  </div>
 		
 	</body>
 </html>

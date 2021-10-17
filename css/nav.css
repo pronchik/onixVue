@@ -7,7 +7,7 @@
      }
      nav.active{
         width: 92%;
-        height: 15.5% ;
+        height: 17% ;
         background-color: white;
      }
      .top-head-sidebar{
@@ -85,26 +85,32 @@
         display: flex;
         margin-top: 2.2%;
         margin-left: 1.3%;
-        background: #EAEAEA;
+        background: #FFF8DD;
         height: 38.33%;
         width: 7%;
         border-radius: 15px;
      }
      .chat span{
         margin-top: 9%;
-        margin-left: 40%;
+        margin-left: 20%;
         font-family: Helvetica;
         font-size:0.9114583333333334vw;
         color: #FFC200;
      }
+     .chat img{
+        margin-left: 7%;
+        width: 25%;
+     }
      .head-sidebar-menu{
+        margin-top: -1.5%;
         width: 100%;
-        height: 30%;
+        height: 20%;
         background:white;
      }
      .head-sidebar-menu ul{
+        margin-top: 20px;
         display: flex; 
-        margin-left: -1%;      
+        margin-left: -2%;      
     }
     .head-sidebar-menu li a{
      opacity : 0.7;
@@ -119,68 +125,109 @@
      }
      .head-sidebar-menu li:hover{
         background-color:#9B9B9B;
-        ;
      }
      #first-li{
-        margin-left: 0;
+        margin-left: 1%;
      }
      #select-tasks.active1 {
+        position: relative;
         display: block;
-         position: absolute;
-         margin-left: 5px;
-         margin-top: 0px;
-         width: 80px;
-         height: 3px;
-         background: yellow;
+         margin-left: 2.5%;
+         margin-top: 0.7%;
+         width: 35px;
+         height: 2px;
+         background: #FFC200;
       }
+      #select-tasks.active1.active{
+         position: relative;
+         display: block;
+         margin-left: 2%;
+         margin-top: 0.8%;
+         width: 35px;
+         height: 2px;
+         background: #FFC200;
+      }
+
       #select-tasks {
          display: none;
       }
       
       #select-kanban.active1 {
          display: block;
-         position: absolute;
-         margin-left: 85px;
-         margin-top: 0px;
-         width: 80px;
-         height: 3px;
-         background: yellow;
+         margin-left: 7.5%;
+         margin-top: 0.7%;
+         width: 60px;
+         height: 2px;
+         background: #FFC200;
+      }
+
+      #select-kanban.active1.active {
+         display: block;
+         margin-left: 6.8%;
+         margin-top: 0.8%;
+         width: 60px;
+         height: 2px;
+         background: #FFC200;
       }
       #select-kanban{
          display: none;
       }
       #select-activity.active1 {
          display: block;
-         position: absolute;
-         margin-left: 165px;
-         margin-top: 0px;
-         width: 80px;
-         height: 3px;
-         background: yellow;
+         margin-left: 14%;
+         margin-top: 0.7%;
+         width: 50px;
+         height: 2px;
+         background: #FFC200;
+      }
+
+      #select-activity.active1.active {
+         display: block;
+         margin-left: 13%;
+         margin-top: 0.8%;
+         width: 50px;
+         height: 2px;
+         background: #FFC200;
       }
       #select-activity{
          display: none;
       }
       #select-calendar.active1 {
          display: block;
-         position: absolute;
-         margin-left: 245px;
-         margin-top: 0px;
-         width: 90px;
-         height: 3px;
-         background: yellow;
+         margin-left: 21%;
+         margin-top: 0.7%;
+         width: 60px;
+         height: 2px;
+         background: #FFC200;
+      }
+
+      #select-calendar.active1.active {
+         display: block;
+         margin-left: 19%;
+         margin-top: 0.8%;
+         width: 60px;
+         height: 2px;
+         background: #FFC200;
       }
       #select-calendar{
          display: none;
       }
       #select-files.active1 {
          display: block;
-         position: absolute;
-         margin-left: 335px;
-         margin-top: 0px;
-         width: 60px;
-         height: 3px;
-         background: yellow;
+         margin-left: 28%;
+         margin-top: 0.7%;
+         width: 40px;
+         height: 2px;
+         background: #FFC200;
+      }
+
+      #select-files.active1.active {
+         display: block;
+         margin-left: 25.5%;
+         margin-top: 0.8%;
+         width: 40px;
+         height: 2px;
+         background: #FFC200;
       }
       #select-files{
          display: none;
