@@ -1,283 +1,182 @@
-@media only screen and (min-width: 992px) {
-    nav{
-        display: block;
-        width: 81.3%;
-        height: 15.5% ;
-        background-color: white;
-     }
-     nav.active{
-        width: 92%;
-        height: 17% ;
-        background-color: white;
-     }
-     .top-head-sidebar{
-        display: flex;
-        width: 100%;
-        height: 70%;
-        background-color:white;
-     }
-     
-     #img-shapes{
-        margin-top: 2%;
-        margin-left: 2%;
-        width: 3.24%;
-        height: 51.5%;
-        background-color:yellow;
-        border-radius: 25%;
-     }
-     #span-redesign{
-        margin-top: 2%;
-        margin-left: 1.225%;
-        font-family: Helvetica;
-        font-size: 2.0833333333333335vw;
-         color: #131313;
-     }
-     .etc{
-        margin-left: 1.2%;
-        margin-top: 2.2%;
-        cursor: pointer;
-        display: flex;
-        height: 38.33%;
-        width: 2.435%;
-        background: #EAEAEA;
-        border-radius: 50%;
-     }
-     .circle-etc{
-        background: #9B9B9B;
-        border-radius: 50%;
-        height: 13.5%;
-        width: 13.5%;
-        margin-top: 45%;
-        margin-left:5%;
-        cursor: pointer;
-     }
-     #first-circle-etc{
-        margin-left: 25%;
-     }
-     .users-photo{
-        margin-top: 2.2%;
-        margin-left: 0.3%;
-        height: 38.33%;
-        width: 2.435%;
-     }
-     #first-users-photo{
-        margin-left: 43%;
-     }
-     .share{
-        cursor:pointer;
-        display: flex;
-        margin-top: 2.2%;
-        margin-left: 1.3%;
-        background: #EAEAEA;
-        height: 38.33%;
-        width: 5%;
-        border-radius: 15px;
-     }
-     .share span{
-        margin-top: 10%;
-        margin-left: 18%;
-        font-family: Helvetica;
-        font-size: 0.9114583333333334vw;
-        color: #131313;
-     }
-     .chat{
-        cursor:pointer;
-        display: flex;
-        margin-top: 2.2%;
-        margin-left: 1.3%;
-        background: #FFF8DD;
-        height: 38.33%;
-        width: 7%;
-        border-radius: 15px;
-     }
-     .chat span{
-        margin-top: 9%;
-        margin-left: 20%;
-        font-family: Helvetica;
-        font-size:0.9114583333333334vw;
-        color: #FFC200;
-     }
-     .chat img{
-        margin-left: 7%;
-        width: 25%;
-     }
-     .head-sidebar-menu{
-        margin-top: -1.5%;
-        width: 100%;
-        height: 20%;
-        background:white;
-     }
-     .head-sidebar-menu ul{
-        margin-top: 20px;
-        display: flex; 
-        margin-left: -2%;      
-    }
-    .head-sidebar-menu li a{
-     opacity : 0.7;
-     font-family : Helvetica;
-     font-size : 1.0416666666666667vw;
-     color : #131313;
-     text-decoration : none;
-     }
-     .head-sidebar-menu li{
-        margin-left: 2.2%;
-        list-style-type: none;
-     }
-     .head-sidebar-menu li:hover{
-        background-color:#9B9B9B;
-     }
-     #first-li{
-        margin-left: 1%;
-     }
-     #select-tasks.active1 {
-        position: relative;
-        display: block;
-         margin-left: 2.5%;
-         margin-top: 0.7%;
-         width: 35px;
-         height: 2px;
-         background: #FFC200;
-      }
-      #select-tasks.active1.active{
-         position: relative;
-         display: block;
-         margin-left: 2%;
-         margin-top: 0.8%;
-         width: 35px;
-         height: 2px;
-         background: #FFC200;
-      }
-
-      #select-tasks {
-         display: none;
-      }
-      
-      #select-kanban.active1 {
-         display: block;
-         margin-left: 7.5%;
-         margin-top: 0.7%;
-         width: 60px;
-         height: 2px;
-         background: #FFC200;
-      }
-
-      #select-kanban.active1.active {
-         display: block;
-         margin-left: 6.8%;
-         margin-top: 0.8%;
-         width: 60px;
-         height: 2px;
-         background: #FFC200;
-      }
-      #select-kanban{
-         display: none;
-      }
-      #select-activity.active1 {
-         display: block;
-         margin-left: 14%;
-         margin-top: 0.7%;
-         width: 50px;
-         height: 2px;
-         background: #FFC200;
-      }
-
-      #select-activity.active1.active {
-         display: block;
-         margin-left: 13%;
-         margin-top: 0.8%;
-         width: 50px;
-         height: 2px;
-         background: #FFC200;
-      }
-      #select-activity{
-         display: none;
-      }
-      #select-calendar.active1 {
-         display: block;
-         margin-left: 21%;
-         margin-top: 0.7%;
-         width: 60px;
-         height: 2px;
-         background: #FFC200;
-      }
-
-      #select-calendar.active1.active {
-         display: block;
-         margin-left: 19%;
-         margin-top: 0.8%;
-         width: 60px;
-         height: 2px;
-         background: #FFC200;
-      }
-      #select-calendar{
-         display: none;
-      }
-      #select-files.active1 {
-         display: block;
-         margin-left: 28%;
-         margin-top: 0.7%;
-         width: 40px;
-         height: 2px;
-         background: #FFC200;
-      }
-
-      #select-files.active1.active {
-         display: block;
-         margin-left: 25.5%;
-         margin-top: 0.8%;
-         width: 40px;
-         height: 2px;
-         background: #FFC200;
-      }
-      #select-files{
-         display: none;
-      }
-
+nav{
+   background: #FFFFFF;
+   width: 100%;
+   height: 136px;
+   display: block;
+   min-height: 136px;
 }
-@media only screen and (max-width: 992px){
-    nav.active{
-        display: none;
-     }
-     nav{
-        width: 100%;
-        height: 250px;
-        background-color:#FFFF;
-        display: block;
-     }
-     .top-head-sidebar{
-        width: 100%;
-        height: 150px;
-        display: flex;
-        align-items: center;
-     }
-     #img-shapes{
-        margin-top: 15px;
-        margin-left: 25px;
-        background-color:chartreuse;
-        border-radius:15px;
-        height: 80px;
-        width: 80px;
-     }
-     #span-redesign{
-        margin-top: 5px;
-        margin-left:40px;
-        font-family: Helvetica;
-        font-size: 3.601108033240997vh;
-        color: #131313;
-     }
-     .etc{
-        display: none;
-     }
-     .users-photo{
-        display: none;
-     }
-     .share{
-        display: none;
-     }
-     .chat{
-        display: none;
-     }
-     .head-sidebar-menu{
-        display: none;
-     }
+
+nav .website-redesign {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding-bottom: 20.5px;
 }
+
+nav .website-redesign .left-part{
+   display: flex;
+   align-items: center;
+   padding: 40px 0px 0px 30px;
+   min-width: 450px;
+}
+
+nav .website-redesign .left-part img{
+   margin-right: 15px;
+   min-width: 40px;
+   width: 40px;
+   height: 40px;
+   background-color: #FFC200;
+   border-radius: 20%;
+}
+
+nav .website-redesign span{
+   font: 32px Helvetica;
+   color: #131313;
+}
+
+nav .website-redesign .circle{
+   display: flex;
+   min-width: 30px;
+   width: 30px;
+   height: 30px;
+   background: #EAEAEA;
+   border-radius: 15px;
+   border-radius: 15px;
+   align-items: center;
+   margin-left: 11px;
+}
+
+nav .website-redesign .circle span{
+   background-color:#D8D8D8;
+   border-radius: 50%;
+   min-width: 4px;
+   height: 4px;
+   width: 4px;
+   margin-left: 2px;
+}
+
+nav .website-redesign .circle span:first-child{
+   margin-left: 7px;
+}
+
+nav .website-redesign .right-part{
+   padding-top: 44px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+nav .website-redesign .right-part img{
+   background-color: none;
+   width: 30px;
+   height: 30px;
+   min-width: 30px;
+   border-radius: 50%;
+   padding-left: 5px;
+}
+
+nav .website-redesign .right-part .share{
+   display: flex;
+   background: #EAEAEA;
+   border-radius: 15px;
+   border-radius: 15px;
+   width: 67px;
+   height: 30px;
+   align-items: center;
+   margin-left: 15px;
+}
+
+nav .website-redesign .right-part .share span{
+   font: 14px Helvetica;
+   padding-left: 15px;
+   color: #131313;
+}
+
+nav .website-redesign .right-part .chat{
+   display: flex;
+   width: 81px;
+   height: 30px;
+   background: #FFF8DD;
+   border-radius: 15px;
+   border-radius: 15px;
+   align-items: center;
+   margin-left: 15px;
+   margin-right: 30px;
+}
+
+nav .website-redesign .right-part .chat img{
+   min-width: 16px;
+   padding-left: 15px;
+   height: 16px;
+   width: 16px;
+}
+nav .website-redesign .right-part .chat span{
+   padding-left: 5px;
+   font: 14px Helvetica;
+   color: #FFC200;
+}
+
+nav .navigation{
+   display: flex;
+   padding-left: 30px;
+}
+
+nav .navigation ul{
+   display: flex;
+}
+
+nav .navigation ul li a{
+   text-decoration: none;
+   opacity: 0.7;
+   font: 16px Helvetica;
+   color: #131313;
+}
+
+nav .navigation ul li{
+   padding-left: 30px;
+}
+
+nav .navigation ul li:first-child{
+   padding-left: 0;
+}
+
+nav .marker{
+   display: flex;
+   padding-top: 14px;
+   padding-left: 25px;
+}
+
+nav .marker span{
+   display: none;
+   margin-left: 75px;
+   background: #FFC200;
+   width: 55px;
+   height: 2px;
+}
+
+nav .marker span:first-child{
+   margin-left: 0;
+}
+
+nav .marker .third-marker  {
+   margin-left: 160px;
+   background: #FFC200;
+   width: 55px;
+   height: 2px;
+}
+
+nav .marker .fourth-marker{
+   margin-left: 325px;
+   background: #FFC200;
+   width: 55px;
+   height: 2px;
+}
+
+nav .marker span:last-child{
+   margin-left: 245px;
+   background: #FFC200;
+   width: 55px;
+   height: 2px;
+}
+
+

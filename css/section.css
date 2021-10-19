@@ -1,256 +1,142 @@
-@media only screen and (min-width: 992px) {
-    section{
-        display: block;
-        background: #FFFFFF;
-        border-radius: 8px;  
-        position: absolute;
-        bottom: 0;
-        width: 50.7%;
-        height: 75%;
-        margin-bottom: 2.5%;
-        margin-left: 34%;
-     }
-  
-     #day{
-        display: none;
-        opacity: 0.5;
-        font-family: Helvetica;
-        font-size: 0.9114583333333334vw;
-        color: #131313;
-        text-transform: uppercase;
-        margin-top: 3%;
-        margin-left: 4%;
-     }
-     #day.active1{
-        display: block;
-     }
-  
-     #kanban{
-        display: none;
-        opacity: 0.5;
-        font-family: Helvetica;
-        font-size: 0.9114583333333334vw;
-        color: #131313;
-        text-transform: uppercase;
-        margin-top: 3%;
-        margin-left: 4%;
-     }
-     #kanban.active1{
-        display: block;
-     }
-     #activity{
-        display: none;
-        opacity: 0.5;
-        font-family: Helvetica;
-        font-size: 0.9114583333333334vw;
-        color: #131313;
-        text-transform: uppercase;
-        margin-top: 3%;
-        margin-left: 4%;
-     }
-     #activity.active1{
-        display: block;
-     }
-  
-     #files{
-        display: none;
-        opacity: 0.5;
-        font-family: Helvetica;
-        font-size: 0.9114583333333334vw;
-        color: #131313;
-        text-transform: uppercase;
-        margin-top: 3%;
-        margin-left: 4%;
-     }
-     #files.active1{
-        display: block;
-     }
-     #calendar{
-        display: none;
-        opacity: 0.5;
-        font-family: Helvetica;
-        font-size: 0.9114583333333334vw;
-        color: #131313;
-        text-transform: uppercase;
-        margin-top: 3%;
-        margin-left: 4%;
-     }
-     #calendar.active1{
-        display: block;
-     }
-     .message{
-        width: 100%;
-        height: 8.3%;
-        margin-top: 3.6%;
-        display: none;
-     }
-     .message.active1{
-        display: flex;
-     }
-     .icon{
-        margin-left: 4%;
-        height: 100%;
-        width: 5.53%;
-        border-radius: 50%;
-        background-color:  #CEF9C6;
-     }
-     .icon img{
-        height: 25%;
-        width: 35%;
-        margin-top: 40%;
-        margin-left: 35%;
-     }
-     .text-message{
-        width: 60%;
-        height: 100%;
-        margin-left: 20px;
-        font-family: Helvetica;
-        font-size: 1.0416666666666667vw;
-        color: #131313;
-        line-height: 20px;
-     }
-     .time-message{
-        opacity: 0.7;
-        font-family: Helvetica;
-        font-size: 0.9114583333333334vw;
-        color: #131313;
-        line-height: 20px;
-        margin-left: 15%;
-     }
-     .tip{
-        background: #F7F6F3;
-        border-radius: 10px;
-         width: 75.5208333333%;   
-        height:16.0116448326%;   
-        margin-top: 2.74122807018%;
-        margin-left: 12.4725877193%;
-        display: none;  
-    }
-  
-    .tip.active1{
-       display: flex;
-    }
-    .class{
-        width: 94.555353902%;   
-        height: 77.2727272727%;   
-        margin-left: 5.444646098%;
-        margin-top: 3.62976406534%;   
-        font-family: Helvetica;
-        font-size: 0.9765625vw;
-        color: #131313;
-        width: 94.43378119%;
-        height: 70.5882352941%;
-        line-height: 20px;
-    }
-    .pictures{
-     height: 18.19505094614265%;
-     width: 87.6644736842%;
-     margin-top: 2.74122807018%;
-     margin-left: 12.4725877193%;
-     display: flex;
-    }
-    .photo{
-        margin-left: 1.56347717323%;
-        border-radius: 8%;
-        width: 15.6347717323%;
-        height:100%; 
-        background: black;
-        display: none;
-    }
-    .photo.active1{
-        display: block;
-    }
-    #first-photo{
-        margin-left: 0;
-    }
+section{
+   display: flex;
+   align-items: center;
+}
+section .content{
+   display: block;
+   margin-top: 30px;
+   background: #FFFFFF;
+   border-radius: 8px;
+   width: 730px;
+   min-width: 730px;
+   height: 540px;
+   margin-left: auto;
+   margin-right: auto;
+}
 
-    .photo1{
-      height: 100%;
-      width: 100%;
-      border-radius:5px;
-    } 
+section .content .activity{
+   display: none;
+   padding-top: 35px;
 }
-@media only screen and (max-width: 992px){
-    section.active{
-        display: none;
-     }
-     section{
-        display: block;
-        background: #FFFFFF;
-        border-radius: 8px;  
-        position: absolute;
-        bottom: 0;
-        width: 80%;
-        top:300px;
-        height: 3000px;
-        margin-left: 175px;
-     }
-  
-  
-     .message{
-        width: 100%;
-        height: 200px;
-        margin-top: 60px;
-        display: flex;
-     }
-     .text-message{
-        width: 80%;
-        height: 100%;
-        margin-left: 20px;
-        font-family: Helvetica;
-        font-size: 2.21606648199446vh;
-        color: #131313;
-        line-height: 50px;
-     }
-     .time-message{
-        opacity: 0.7;
-        font-family: Helvetica;
-        font-size: 2.21606648199446vh;
-        color: #131313;
-        line-height: 50px;
-        margin-left: 15%;
-     }
-     .tip{
-        background: #F7F6F3;
-        border-radius: 10px;
-         width: 593px;   
-        height:350px;   
-        margin-top: 60px;
-        margin-left: 100px;
-        display: flex;
-    
-    }
-    .class{ 
-        margin-left: 32px;
-        margin-top: 21px;   
-        font-family: Helvetica;
-        font-size: 2.21606648199446vh;
-        color: #131313;
-        width: 94.43378119%;
-        height: 70.5882352941%;
-        line-height: 50px;
-    }
-    .pictures{
-       height: 600px;
-     margin-top: 50px;
-     margin-left: 50px;
-     display: block;
-  }
-  .photo{
-     margin-top:20px;
-     border-radius: 8%;
-     width: 400px;
-     height:400px; 
-     background: black;
-     margin-left: 100px;
-  }
-  #first-photo{
-     margin-top: 20px;
-     margin-left: 100px;
-  }
-  .photo1{
-   height: 100%;
-   width: 100%;
-   border-radius:5px;
- } 
+
+section .content .activity.active1{
+   display: block;
+
 }
+
+section .content .activity span{
+   opacity: 0.5;
+   font-family: Helvetica;
+   font-size: 14px;
+   color: #131313;
+   padding-left: 30px;
+}
+
+section .content .activity .message{
+   display: flex;
+   margin-top: 32px;
+}
+
+section .content .activity .message span{
+   background: #CEF9C6;
+   padding: 0;
+   margin-left: 30px;
+   min-width: 40px;
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+}
+
+section .content .activity .message span img{
+   margin-left: 15px;
+   color: #000;
+}
+
+section .content .activity .message p{
+   max-width: 461px;
+   font: 16px/20px Helvetica;
+   color: #131313;
+   padding-left: 20px;
+}
+
+section .content .activity .message p:last-child{
+   opacity: 0.7;
+   font-size: 14px/20px Helvetica;
+   color: #131313;
+   text-align: right;
+   padding-left: 96px;
+}
+
+section .content .activity .tip{
+   display: flex;
+   margin-top: 20px;
+   align-items: center;
+}
+
+section .content .activity .tip span{
+   margin-left: 90px;
+   display: flex;
+   min-width: 551px;
+   width: 551px;
+   height: 88px;
+   background: #F7F6F3;
+   border-radius: 10px;
+   align-items: center;
+   font: 15px/20px Helvetica;
+   color: #131313;
+}
+
+section .content .activity .pictures{
+   display: flex;
+   padding-top: 20px;
+}
+
+section .content .activity .pictures img{
+   height: 100px;
+   width: 100px;
+   min-width: 100px;
+   border-radius: 8px;
+   margin-left: 10px;
+}
+
+section .content .activity .pictures img:first-child{
+   margin-left: 90px;
+}
+
+.tasks{
+   display: none;
+}
+
+.tasks.active1{
+   display: block;
+}
+
+.kanban{
+   display: none;
+}
+
+.kanban.active1{
+   display: block;
+}
+
+.calendar{
+   display: none;
+}
+
+.calendar.active1{
+   display: block;
+}
+
+.files{
+   display: none;
+}
+
+.files.active1{
+   display: block;
+}
+
+
+
+

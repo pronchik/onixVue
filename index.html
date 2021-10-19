@@ -11,161 +11,255 @@
 		<script src="js/script.js"></script>
 	</head>
 	<body>
-		<aside>
-			<div class="project-logo">
-				<img src="img/Logo@3x.svg" id="project-logo" alt="logo" onclick="openmenu()">
-				<span id="project-name" >PROJECTUS</span>
-				<img src="img/Search@3x.svg" alt="search" id = "search" >
-			</div>
-			
-			<div class="introduction">
-				<img src="img/me.png" class = "user-img" alt="user-img" >
-				<div class="name-position">
-					<table>
-                        <tr>
-                            <td id = "user-name">Maksym Pron</td>
-                        </tr>
-                        <tr>
-                            <td id="user-pos">Web-dev</td>
-                        </tr>
-                </table>
+		<div class="wrapper">
+			<aside>
+				<div class="project-logo">
+					<a href="#" onclick="openMenu()">
+						<img src="img/Logo@3x.svg" id="project-logo" alt="logo">
+						<span>PROJECTUS</span>
+					</a>
+					<img src="img/Search@3x.svg" alt="search" id = "search" >
 				</div>
-				<div class="circle" id="circle-first"></div>
-				<div class="circle"></div>
-				<div class="circle"></div>
-			</div>
-
-			<div class="statis">
-				<div class="completed-tasks" onclick="modal()">
-					<div class="number-completed">
-						<span>372</span>
-					</div>
-					<div class="completed">
+				
+				<div class="introduction">
+					<div class="profile-info">
+						<img src="img/me.png" class = "user-img" alt="user-img" >
+						<div class="name-position">
+							<p>
+								Maksym Pron
+							</p>
+							<span>
+								Ghjkfdf
+							</span>
+						</div>
+						</div>
+						<div class="circle" >
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+				</div>
+				
+				<div class="statistic">
+					<div class="completed-tasks" onclick="modal()">
+						<p>371</p>
 						<span>Completed tasks</span>
 					</div>
-				</div>
-				<div class="open-tasks">
-					<div class="number-open">
-						<span>11</span>
+					<div class="open-tasks">
+						<p>11</p>
+						<span>Open tasks</span>
 					</div>
-					<div class="open">
-						<span>Open Tasks</span>
-					</div>
-				</div>
-			</div>
 
-			<div class="left-menu">
-				
-				<div class="menu1"><span >MENU</span></div>
-				<ul class = "menu-list">
-					<li>Home</li>
-					<li>My Tasks</li>
-					<li id = "last-note">Notifications <div class="notifications"><span>3</span></div></li>
-				</ul>
-				<div class = "menu-list-icons">
-					<div id = "home-img"><img src="img/home.png" alt = "img-home"></div>
-					<div id="list-img"><img src="img/list.png" alt = "img-list"></div>
-					<div id="notif-img"><img src="img/notif.png" alt = "img-notif"></div>
 				</div>
-				
-			</div>
-		</aside>
-		<nav>
-			<div class="top-head-sidebar">
-				<img src="img/Shapes@2x.png" id="img-shapes" alt = "shapes">
-				<span id="span-redesign">Website Redesign</span>
-				<div class="etc">
-					<div class="circle-etc" id="first-circle-etc"></div>
-					<div class="circle-etc"></div>
-					<div class="circle-etc"></div>
+
+				<div class="menu">
+					<span>MENU</span>
+					<ul>
+						<li>
+							Home
+						</li>
+						<li>
+							My Tasks
+						</li>
+						<li>
+							Notifications <div class="notifications"><span>3</span>
+							
+						</li>
+					</ul>
 				</div>
-				<img src="img/me.png" class="users-photo" alt = "img-user" id="first-users-photo">
-				<img src="img/me.png" class="users-photo" alt = "img-user">
-				<img src="img/me.png" class="users-photo" alt = "img-user">
-				<div class="share">
-					<span>Share</span>
+			</aside>
+			<div class="asd"><nav>
+				<div class="website-redesign">
+					<div class="left-part">
+						<img src="img/Shapes@2x.png">
+						<span>Website Redesign</span>
+						<div class="circle">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</div>
+					<div class="right-part">
+						<img src="img/me.png"  alt="user-img">
+						<img src="img/me.png"  alt="user-img">
+						<img src="img/me.png"  alt="user-img">
+						<div class="share">
+							<span>Share</span>
+						</div>
+						<div class="chat">
+							<img src="img/Combined Shape@1x.svg">
+							<span>Chat</span>
+						</div>
+					</div>	
 				</div>
-				<div class="chat"><img src="img/Combined Shape@1x.svg" alt = "chat">
-					<span>Chat</span>
+				<div class="navigation">
+					<ul>
+						<li><a href="#" onclick="tasks()">Tasks</a></li>
+						<li><a href="#" onclick="kanban()">Kanban</a></li>
+						<li><a href="#" onclick="activity()">Activity</a></li>
+						<li><a href="#" onclick="calendar()">Calendar</a></li>
+						<li><a href="#" onclick="files()">Files</a></li>
+					</ul>
 				</div>
-			</div>
-			<nav class="head-sidebar-menu">
-				<ul>
-                    <li id="first-li">
-                        <a href="#" onclick="tasks()">
-                            Tasks
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" onclick="kanban()">
-                            Kanban
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" onclick="activity()">
-                            Activity
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" onclick="calendar()">
-                            Calendar
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" onclick="files()">
-                            Files
-                        </a>
-                    </li>
-                </ul>
-				
+				<div class="marker">
+					<span></span>
+					<span></span>
+					<span class="third-marker"></span>
+					<span class="fourth-marker"></span>
+					<span></span>
+				</div>
+					
 			</nav>
-			<div id="select-tasks"></div>
-			<div id="select-kanban"></div>
-			<div id="select-activity"></div>
-			<div id="select-calendar"></div>
-			<div id="select-files"></div>
-		</nav>
+			<section>
+				<div class="content">
+					<div class="activity">
+						<span>Today</span>
+						<div class="message">
+							<span>
+								<img src="img/Icon@3x.svg">
+							</span>
+							<p>Darika Samak mark as done Listing on Product Hunt so that we can reach as many potential users</p>
+							<p>8:40 PM</p>
+						</div>
+						<div class="message">
+							<span>
+								<img src="img/Icon@3x.svg">
+							</span>
+							<p>Emilee Simchenko commented on Account for teams and personal in bottom style</p>
+							<p>7:32 PM</p>
+						</div>
+						<div class="tip">
+							<span>During a project build, it is necessary to evaluate the product design and development against project requirements and outcomes</span>
+						</div>
+						<div class="message">
+							<span>
+								<img src="img/Icon@3x.svg">
+							</span>
+							<p>Darika Samak uploaded 4 files on An option to search in current projects or in all projects</p>
+							<p>6:02 PM</p>
+						</div>
+						<div class="pictures">
+							<img src="img/1-1.jpg" alt="">
+							<img src="img/1-1.jpg" alt="">
+							<img src="img/1-1.jpg" alt="">
+							<img src="img/1-1.jpg" alt="">
+						</div>
+					</div>
+					<div class="tasks"><span>Tasks</span></div>
+					<div class="kanban"><span>Kanban</span></div>
+					<div class="calendar"><span>Calendar</span></div>
+					<div class="files"><span>Files</span></div>
+				</div>
+			</section></div>
+			
+	
+		</div>
 
-		<section> 
-			<div id ="day"><h4><span>Tasks</span></h4></div>
-			<div id ="kanban"><span>Kanban</span></div>
-			<div id ="activity"><span>Today</span></div>
-			<div id ="calendar"><span>Calendar</span></div>
-			<div id ="files"><span>Files</span></div>
-			<div class="message">
-				<div class="icon"><img src="img/Icon@3x.svg" alt="checkmark"></div>
-				<div class="text-message">Darika Samak mark as done Listing on 
-					Product Hunt so that we can reach as many potential users</div>
-				<div class= "time-message">8:40 PM</div>
-			</div>
+		
+				
 			
-			<div class="message">
-				<div class="icon"><img src="img/Icon@3x.svg" alt="checkmark"></div>
-				<div class="text-message">Emilee Simchenko commented on Account for teams and personal in bottom style</div>
-				<div class= "time-message">7:32 PM</div>
-			</div>
 			
-			<div class="tip">   
-				<div class="class"> <span>
-				  During a project build, it is necessary to evaluate the product design and development against project requirements and outcomes
-				</span></div>
-			</div>  
-			
-			<div class="message">
-				<div class="icon"><img src="img/Icon@3x.svg" alt="checkmark"></div>
-				<div class="text-message">Darika Samak uploaded 4 files on An option to search in current projects or
-				   in all projects</div>
-				<div class= "time-message">6:02 PM</div>
+			<!-- <div class="content">
+				<nav>
+					<div class="top-head-sidebar">
+						<img src="img/Shapes@2x.png" id="img-shapes" alt = "shapes">
+						<span id="span-redesign">Website Redesign</span>
+						<div class="etc">
+							<div class="circle-etc" id="first-circle-etc"></div>
+							<div class="circle-etc"></div>
+							<div class="circle-etc"></div>
+						</div>
+						<img src="img/me.png" class="users-photo" alt = "img-user" id="first-users-photo">
+						<img src="img/me.png" class="users-photo" alt = "img-user">
+						<img src="img/me.png" class="users-photo" alt = "img-user">
+						<div class="share">
+							<span>Share</span>
+						</div>
+						<div class="chat"><img src="img/Combined Shape@1x.svg" alt = "chat">
+							<span>Chat</span>
+						</div>
+					</div>
+					<nav class="head-sidebar-menu">
+						<ul>
+							<li id="first-li">
+								<a href="#" onclick="tasks()">
+									Tasks
+								</a>
+							</li>
+							<li>
+								<a href="#" onclick="kanban()">
+									Kanban
+								</a>
+							</li>
+							<li>
+								<a href="#" onclick="activity()">
+									Activity
+								</a>
+							</li>
+							<li>
+								<a href="#" onclick="calendar()">
+									Calendar
+								</a>
+							</li>
+							<li>
+								<a href="#" onclick="files()">
+									Files
+								</a>
+							</li>
+						</ul>
+						
+					</nav>
+					<div id="select-tasks"></div>
+					<div id="select-kanban"></div>
+					<div id="select-activity"></div>
+					<div id="select-calendar"></div>
+					<div id="select-files"></div>
+				</nav>
+		
+				<section> 
+					<div id ="day"><h4><span>Tasks</span></h4></div>
+					<div id ="kanban"><span>Kanban</span></div>
+					<div id ="activity"><span>Today</span></div>
+					<div id ="calendar"><span>Calendar</span></div>
+					<div id ="files"><span>Files</span></div>
+					<div class="message">
+						<div class="icon"><img src="img/Icon@3x.svg" alt="checkmark"></div>
+						<div class="text-message">Darika Samak mark as done Listing on 
+							Product Hunt so that we can reach as many potential users</div>
+						<div class= "time-message">8:40 PM</div>
+					</div>
+					
+					<div class="message">
+						<div class="icon"><img src="img/Icon@3x.svg" alt="checkmark"></div>
+						<div class="text-message">Emilee Simchenko commented on Account for teams and personal in bottom style</div>
+						<div class= "time-message">7:32 PM</div>
+					</div>
+					
+					<div class="tip">   
+						<div class="class"> <span>
+						  During a project build, it is necessary to evaluate the product design and development against project requirements and outcomes
+						</span></div>
+					</div>  
+					
+					<div class="message">
+						<div class="icon"><img src="img/Icon@3x.svg" alt="checkmark"></div>
+						<div class="text-message">Darika Samak uploaded 4 files on An option to search in current projects or
+						   in all projects</div>
+						<div class= "time-message">6:02 PM</div>
+					</div>
+					<div class="pictures">
+						<div class="photo" id="first-photo"><img src="img/1-1.jpg" class="photo1" onclick="img()"></div>
+						<div class="photo"><img src="img/1-1.jpg" class="photo1"	onclick="img()" ></div>
+						<div class="photo"><img src="img/1-1.jpg" class="photo1" onclick="img()"></div>
+						<div class="photo"><img src="img/1-1.jpg" class="photo1" onclick="img()"></div>
+					</div>
+					<div id="Cards"></div>
+					
+				</section>
 			</div>
-			<div class="pictures">
-				<div class="photo" id="first-photo"><img src="img/1-1.jpg" class="photo1" onclick="img()"></div>
-				<div class="photo"><img src="img/1-1.jpg" class="photo1"	onclick="img()" ></div>
-				<div class="photo"><img src="img/1-1.jpg" class="photo1" onclick="img()"></div>
-				<div class="photo"><img src="img/1-1.jpg" class="photo1" onclick="img()"></div>
-			</div>
-			<div id="Cards"></div>
-			
-		</section>
+		</div> -->
+		
+		
 		<div class="modal">
 
 			<div class="modal-content">

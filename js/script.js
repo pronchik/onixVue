@@ -1,59 +1,32 @@
-function openmenu(){
-  const aside = document.querySelectorAll("aside");
-  aside[0].classList.toggle('active');
+function openMenu(){
+  const aside = document.getElementsByTagName("aside")[0];
+  aside.classList.toggle('active');
 
-  const projectName = document.getElementById('project-name');
-  projectName.classList.toggle('active');
+  const span = document.getElementsByTagName("span")[0];
+  span.classList.toggle('active');
+
+  const pLogo = document.getElementById('project-logo');
+  pLogo.classList.toggle('active');
 
   const search = document.getElementById('search');
   search.classList.toggle('active');
 
-  const projectLogo = document.getElementById('project-logo');
-  projectLogo.classList.toggle('active');
+  const userImg = document.getElementsByClassName('introduction')[0];
+  userImg.classList.toggle('active');
 
-  const namePosition = document.getElementsByClassName('name-position');
-  namePosition[0].classList.toggle('active');
+  const name = document.getElementsByTagName('p')[0].classList.toggle('active');
 
-  const circle = document.getElementsByClassName('circle');
-  circle[0].classList.toggle('active');
-  circle[1].classList.toggle('active');
-  circle[2].classList.toggle('active');
+  const position = document.getElementsByTagName('span')[1];
+  position.classList.toggle('active');
 
-  const userImg = document.getElementsByClassName('user-img');
-  userImg[0].classList.toggle('active');
+  const circle = document.getElementsByClassName("circle")[0];
+  circle.classList.toggle('active');
 
-  const statis = document.getElementsByClassName('statis');
-  statis[0].classList.toggle('active');
+  const statis = document.getElementsByClassName("statistic")[0];
+  statis.classList.toggle('active');
 
-  const menu1 = document.getElementsByClassName('menu1');
-  menu1[0].classList.toggle('active');
-
-  const menuList = document.getElementsByClassName('menu-list');
-  menuList[0].classList.toggle('active');
-
-  const menuListIcons = document.getElementsByClassName('menu-list-icons');
-  menuListIcons[0].classList.toggle('active');
-
-  const nav = document.querySelectorAll("nav");
-  nav[0].classList.toggle('active');
-
-  const section = document.querySelectorAll("section");
-  section[0].classList.toggle('active');
-
-  const selectTasks = document.getElementById('select-tasks');
-  selectTasks.classList.toggle('active');
-
-  const selectKanban = document.getElementById('select-kanban');
-  selectKanban.classList.toggle('active');
-
-  const selectActivity = document.getElementById('select-activity');
-  selectActivity.classList.toggle('active');
-
-  const selectCalendar = document.getElementById('select-calendar');
-  selectCalendar.classList.toggle('active');
-
-  const selectFiles = document.getElementById('select-files');
-  selectFiles.classList.toggle('active');
+  const  menu = document.getElementsByClassName('menu')[0];
+  menu.classList.toggle('active');
 }
 
 function tasks(){
@@ -64,12 +37,18 @@ function tasks(){
     });
   }
   myFunction();
-  const day1 = document.getElementById('day');
+  const day1 = document.getElementsByClassName('tasks')[0];
   day1.classList.toggle('active1');
 
-  const selecTasks = document.getElementById('select-tasks');
-  selecTasks.classList.toggle('active1');
-
+  const select = document.getElementsByTagName("span");
+  for(let i = 15 ; i < 20; i++){
+    if(i == 15){
+      select[i].style.display = 'block';
+    }
+    else{
+      select[i].style.display = 'none';
+    }
+  }
   
 }
 
@@ -81,11 +60,18 @@ function kanban(){
       });
     }
   myFunction();
-  const kanban1 = document.getElementById('kanban');
+  const kanban1 = document.getElementsByClassName('kanban')[0];
   kanban1.classList.toggle('active1');
 
-  const selecKanban = document.getElementById('select-kanban');
-  selecKanban.classList.toggle('active1');
+  const select = document.getElementsByTagName("span");
+  for(let i = 15 ; i < 20; i++){
+    if(i == 16){
+      select[i].style.display = 'block';
+    }
+    else{
+      select[i].style.display = 'none';
+    }
+  }
 
 }
 
@@ -97,7 +83,7 @@ function activity(){
     });
   }
   myFunction();
-  const activity1 = document.getElementById('activity');
+  const activity1 = document.getElementsByClassName('activity')[0];
   activity1.classList.toggle('active1');
 
   const message = document.getElementsByClassName('message');
@@ -108,15 +94,17 @@ function activity(){
   const tip = document.getElementsByClassName('tip');
   tip[0].classList.toggle('active1');
 
-  const photo = document.getElementsByClassName('photo');
-  photo[0].classList.toggle('active1');
-  photo[1].classList.toggle('active1');
-  photo[2].classList.toggle('active1');
-  photo[3].classList.toggle('active1');
 
-  const selecActivity = document.getElementById('select-activity');
-  selecActivity.classList.toggle('active1');
 
+  const select = document.getElementsByTagName("span");
+  for(let i = 15 ; i < 20; i++){
+    if(i == 17){
+      select[i].style.display = 'block';
+    }
+    else{
+      select[i].style.display = 'none';
+    }
+  }
 }
 
 function files(){
@@ -127,11 +115,18 @@ function myFunction(e) {
     });
   }
   myFunction();
-  const files1 = document.getElementById('files');
+  const files1 = document.getElementsByClassName('files')[0];
   files1.classList.toggle('active1');
 
-  const selecFiles = document.getElementById('select-files');
-  selecFiles.classList.toggle('active1');
+  const select = document.getElementsByTagName("span");
+  for(let i = 15 ; i < 20; i++){
+    if(i == 18){
+      select[i].style.display = 'block';
+    }
+    else{
+      select[i].style.display = 'none';
+    }
+  }
 }
 
 function calendar(){
@@ -142,11 +137,18 @@ function myFunction(e) {
     });
   }
   myFunction();
-  const calendar1 = document.getElementById('calendar');
+  const calendar1 = document.getElementsByClassName('calendar')[0];
   calendar1.classList.toggle('active1');
 
-  const selecCalendar = document.getElementById('select-calendar');
-  selecCalendar.classList.toggle('active1');
+  const select = document.getElementsByTagName("span");
+  for(let i = 15 ; i < 20; i++){
+    if(i == 19){
+      select[i].style.display = 'block';
+    }
+    else{
+      select[i].style.display = 'none';
+    }
+  }
 }
 
 function modal(){
@@ -155,9 +157,9 @@ function modal(){
   const btnNo = document.getElementsByClassName('no')[0];
   const btnNYes = document.getElementsByClassName('yes')[0];
 
-  const numberCompleted = document.getElementsByClassName("number-completed")[0];
+  const numberCompleted = document.getElementsByTagName("p")[1];
   
-  const numberOpen = document.getElementsByClassName("number-open")[0];
+  const numberOpen = document.getElementsByTagName("p")[2];
 
   modal.style.display = "block";
 
@@ -182,25 +184,25 @@ function modal(){
 }
 
 function img(){
-  const img = document.getElementsByClassName('photo');
-  const log = document.getElementsByTagName("span")[6];
-  console.log(img);
+  const img = document.getElementsByTagName('img');
+  const log = document.getElementsByTagName("span")[8];
 
-  img[0].onclick = function(){
+  img[11].onclick = () =>{
     log.innerText = '0';
   };
-  img[1].onclick = function(){
+  img[12].onclick = function(){
     log.innerText = '1';
   };
-  img[2].onclick = function(){
+  img[13].onclick = function(){
     log.innerText = '2';
   };
-  img[3].onclick = function(){
+  img[14].onclick = function(){
     log.innerText = '3';
   };
 
 }
 
-
-window.onload = activity;
-
+window.onload = () =>{
+  activity();
+  img();
+}
