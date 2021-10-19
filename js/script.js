@@ -205,4 +205,4 @@ function img(){
 window.onload = () =>{
   activity();
   img();
-}
+};

@@ -21,7 +21,6 @@ section .content .activity{
 
 section .content .activity.active1{
    display: block;
-
 }
 
 section .content .activity span{
@@ -33,32 +32,45 @@ section .content .activity span{
 }
 
 section .content .activity .message{
+   justify-content: space-between;
+   align-items: center;
    display: flex;
-   margin-top: 32px;
+   padding: 30px 30px 20px 30px;
+}
+
+section .content .activity .message:first-child{
+   justify-content: space-between;
+   align-items: center;
+   display: flex;
+   padding: 30px 30px 30px 30px;
 }
 
 section .content .activity .message span{
    background: #CEF9C6;
-   padding: 0;
-   margin-left: 30px;
    min-width: 40px;
    width: 40px;
    height: 40px;
    border-radius: 50%;
    display: flex;
    align-items: center;
+   padding-left: 0;
 }
 
 section .content .activity .message span img{
-   margin-left: 15px;
+   padding-left: 15px;
    color: #000;
 }
 
-section .content .activity .message p{
+section .content .activity .message .text{
+   padding-left: 20px;
+   display: flex;
+   align-items: center;
+}
+
+section .content .activity .message .text p{
    max-width: 461px;
    font: 16px/20px Helvetica;
    color: #131313;
-   padding-left: 20px;
 }
 
 section .content .activity .message p:last-child{
@@ -66,12 +78,11 @@ section .content .activity .message p:last-child{
    font-size: 14px/20px Helvetica;
    color: #131313;
    text-align: right;
-   padding-left: 96px;
+   padding-left: 80px;
 }
 
 section .content .activity .tip{
    display: flex;
-   margin-top: 20px;
    align-items: center;
 }
 
@@ -90,7 +101,7 @@ section .content .activity .tip span{
 
 section .content .activity .pictures{
    display: flex;
-   padding-top: 20px;
+   padding-top: 0px;
 }
 
 section .content .activity .pictures img{

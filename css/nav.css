@@ -10,13 +10,12 @@ nav .website-redesign {
    display: flex;
    align-items: center;
    justify-content: space-between;
-   padding-bottom: 20.5px;
+   padding: 40px 30px 20.5px 30px;
 }
 
 nav .website-redesign .left-part{
    display: flex;
    align-items: center;
-   padding: 40px 0px 0px 30px;
    min-width: 450px;
 }
 
@@ -41,7 +40,6 @@ nav .website-redesign .circle{
    height: 30px;
    background: #EAEAEA;
    border-radius: 15px;
-   border-radius: 15px;
    align-items: center;
    margin-left: 11px;
 }
@@ -60,10 +58,8 @@ nav .website-redesign .circle span:first-child{
 }
 
 nav .website-redesign .right-part{
-   padding-top: 44px;
    display: flex;
    align-items: center;
-   justify-content: space-between;
 }
 
 nav .website-redesign .right-part img{
@@ -79,8 +75,8 @@ nav .website-redesign .right-part .share{
    display: flex;
    background: #EAEAEA;
    border-radius: 15px;
-   border-radius: 15px;
    width: 67px;
+   min-width: 67px;
    height: 30px;
    align-items: center;
    margin-left: 15px;
@@ -95,13 +91,12 @@ nav .website-redesign .right-part .share span{
 nav .website-redesign .right-part .chat{
    display: flex;
    width: 81px;
+   min-width: 81px;
    height: 30px;
    background: #FFF8DD;
    border-radius: 15px;
-   border-radius: 15px;
    align-items: center;
-   margin-left: 15px;
-   margin-right: 30px;
+   margin: 0 30px 0 15px;
 }
 
 nav .website-redesign .right-part .chat img{
