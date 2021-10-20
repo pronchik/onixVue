@@ -148,6 +148,89 @@ section .content .activity .pictures img:first-child{
    display: block;
 }
 
+select{
+   display: none;
+}
 
+@media only screen and (max-width: 600px){
+   section{
+      display: block;
+      width: 280px;
+   }
+
+   section .content{
+      display: block;
+      width: 280px;
+      min-width: 280px;
+   }
+
+   section .content .activity.active1{
+      width: 280px;
+      min-width: 280px;
+   }
+   
+   section .content .activity .message .text{
+      padding-left: 20px;
+      display: flex;
+      align-items: center;
+   }
+   
+   section .content .activity .message .text p{
+      max-width: 461px;
+      font: 16px/20px Helvetica;
+      color: #131313;
+   }
+   
+   section .content .activity .message p:last-child{
+      opacity: 0.7;
+      font-size: 14px/20px Helvetica;
+      color: #131313;
+      text-align: right;
+      padding-left: 30px;
+   }
+   
+   section .content .activity .tip{
+      padding-top: 50px;
+      display: flex;
+      align-items: center;
+   }
+   
+   section .content .activity .tip span{
+      margin-left: 90px;
+      display: flex;
+      min-width: 100px;
+      width: 120px;
+      height: 200px;
+      background: #F7F6F3;
+      border-radius: 10px;
+      align-items: center;
+      font: 15px/20px Helvetica;
+      color: #131313;
+   }
+   
+   section .content .activity .pictures{
+      display: block;
+      padding-bottom: 100px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100px;
+   }
+   
+   section .content .activity .pictures img{
+      height: 100px;
+      width: 100px;
+      min-width: 100px;
+      border-radius: 8px;
+      margin-left: 0px;
+   }
+   
+   section .content .activity .pictures img:first-child{
+      margin-left: 0px;
+   }
+
+   select{
+      display: block;
+   }
+}
 
 

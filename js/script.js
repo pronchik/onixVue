@@ -38,6 +38,29 @@ function openMenu(){
 
   const ul = document.getElementsByTagName('ul')[0];
   ul.classList.toggle('active');
+
+  const asd = document.getElementsByClassName('asd')[0];
+  asd.classList.toggle('active');
+}
+
+function fun1() {
+  let sel=document.getElementById('select').selectedIndex;
+  let options=document.getElementById('select').options;
+  if(options[sel].value == 'Kanban'){
+    kanban();
+  }
+  if(options[sel].value == 'Tasks'){
+    tasks();
+  }
+  if(options[sel].value == 'Calendar'){
+    calendar();
+  }
+  if(options[sel].value == 'Files'){
+    files();
+  }
+  if(options[sel].value == 'Activity'){
+    activity();
+  }
 }
 
 function tasks(){

@@ -174,4 +174,72 @@ nav .marker span:last-child{
    height: 2px;
 }
 
+@media only screen and (max-width: 600px){
+   nav{
+      background: #FFFFFF;
+      width: 100%;
+      height: 100px;
+      min-height: 0px;
+      display: block;
+   }
 
+   nav .website-redesign {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 25px 30px 20.5px 20px;
+   }
+   
+
+   nav .website-redesign .right-part{
+      display: none;
+   }
+
+   nav .website-redesign .left-part{
+      display: flex;
+      align-items: center;
+      min-width: 120px;
+   }
+   
+   nav .website-redesign .left-part img{
+      margin-right: 15px;
+      min-width: 35px;
+      width: 35px;
+      height: 35px;
+      background-color: #FFC200;
+      border-radius: 20%;
+   }
+   
+   nav .website-redesign span{
+      font: 20px Helvetica;
+      color: #131313;
+   }
+   
+   nav .website-redesign .circle{
+      display: none;
+      min-width: 30px;
+      width: 30px;
+      height: 30px;
+      background: #EAEAEA;
+      border-radius: 15px;
+      align-items: center;
+      margin-left: 11px;
+   }
+   
+   nav .website-redesign .circle span{
+      background-color:#D8D8D8;
+      border-radius: 50%;
+      min-width: 4px;
+      height: 4px;
+      width: 4px;
+      margin-left: 2px;
+   }
+
+   nav .navigation{
+      display: none;
+      padding-left: 30px;
+   }
+   nav .marker{
+      display:none;
+   }
+}

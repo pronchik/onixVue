@@ -166,8 +166,12 @@ table {
   }
 
   .asd{
-    display: none;
+    display: block;
     width: 100%;
+  }
+
+  .asd.active{
+    display: none;
   }
 
   .modal {
