@@ -189,19 +189,19 @@ function modal(){
 }
 
 function img(){
-  const img = document.getElementsByTagName('img');
+  const img1 = document.getElementsByTagName('img');
   const log = document.getElementsByTagName("span")[8];
 
-  img[11].onclick = () =>{
+  img1[14].onclick = () =>{
     log.innerText = '0';
   };
-  img[12].onclick = function(){
+  img1[15].onclick = function(){
     log.innerText = '1';
   };
-  img[13].onclick = function(){
+  img1[16].onclick = function(){
     log.innerText = '2';
   };
-  img[14].onclick = function(){
+  img1[17].onclick = function(){
     log.innerText = '3';
   };
 
