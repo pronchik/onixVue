@@ -24,7 +24,14 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 body {
+  height: 100%;
+  width: 100%;
   line-height: 1;
+}
+
+html{
+  width: 100%;
+  height: 100%;
 }
 ol, ul {
   list-style: none;
@@ -43,6 +50,8 @@ table {
 }
 
 .wrapper{
+  width: 100%;
+  height: 100%;
    display: flex;
    background: #F7F6F3;
 }
@@ -124,7 +133,13 @@ table {
   footer, header, hgroup, menu, nav, section {
     display: block;
   }
+  html{
+    width: 100%;
+    height: 100%;
+  }
   body {
+    width: 100%;
+    height: 100%;
     line-height: 1;
   }
   ol, ul {
@@ -144,12 +159,14 @@ table {
   }
 
   .wrapper{
-    display: none;
+    height: 100%;
+    width: 100%;
+    display: flex;
     background: #F7F6F3;
   }
 
   .asd{
-    display: block;
+    display: none;
     width: 100%;
   }
 

@@ -27,6 +27,11 @@ function openMenu(){
 
   const  menu = document.getElementsByClassName('menu')[0];
   menu.classList.toggle('active');
+
+  const img = document.getElementsByTagName("img");
+  img[3].classList.toggle('active');
+  img[4].classList.toggle('active');
+  img[5].classList.toggle('active');
 }
 
 function tasks(){
