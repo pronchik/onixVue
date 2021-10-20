@@ -32,6 +32,12 @@ function openMenu(){
   img[3].classList.toggle('active');
   img[4].classList.toggle('active');
   img[5].classList.toggle('active');
+
+  const spanMenu = document.getElementsByTagName('span')[7];
+  spanMenu.classList.toggle('active');
+
+  const ul = document.getElementsByTagName('ul')[0];
+  ul.classList.toggle('active');
 }
 
 function tasks(){

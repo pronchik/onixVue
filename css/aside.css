@@ -196,14 +196,19 @@ aside .menu li:last-child{
 aside .menu .notifications{
    background: #65db04;
    border-radius: 50%;
+   min-width: 20px;
    height: 20px;
    width: 20px;
    margin-left: 9px;
    cursor: pointer;
    text-align: center;
+   display: flex;
+   align-items: center;
 }
 
 aside .menu .notifications span{
+   padding-left: 5px;
+   display: block;
    font:13px Helvetica;
    color: #131313;
 }
@@ -236,7 +241,7 @@ aside .img-menu img.active{
    aside .project-logo{
       display: flex;
       justify-content: space-between;
-      padding: 32.5px 20px 32.5px 30px;
+      padding: 32.5px 40px 32.5px 30px;
       align-items: center;
    }
    
@@ -257,7 +262,6 @@ aside .img-menu img.active{
    }
 
    aside .project-logo #search.active{
-      margin-left: 10px;
       display: block;
    }
    
@@ -292,11 +296,19 @@ aside .img-menu img.active{
    aside .introduction p{
       display: none;
    }
+
+   aside .introduction p.active{
+      display: block;
+   }
    
    aside .introduction span{
       display: none;
    }
    
+   aside .introduction span.active{
+      display: block;
+   }
+
    aside .introduction .name-position{
       padding-left: 15px;
    }
@@ -305,9 +317,17 @@ aside .img-menu img.active{
    aside .introduction .circle{
       display: none;
    }
-   
+
+   aside .introduction .circle.active{
+      margin-top: 20px;
+      width: 40px;
+      height: 40px;
+      display: flex;
+   }
+
    aside .introduction .circle span{
       background-color:#D8D8D8;
+      display: block;
       border-radius: 50%;
       min-width: 4px;
       height: 4px;
@@ -323,12 +343,62 @@ aside .img-menu img.active{
       display: none;
    }
 
+   aside .statistic.active{
+      background: #000;
+      display: flex;
+      align-items: center;
+      padding: 20px 85px 0px 70px;
+      justify-content: space-between;
+   }
+
+   aside .menu.active{
+      padding-top: 30px;
+      background: #000;
+      margin-right: auto;
+      margin-left: auto;
+      display: block;
+      max-width: 100px;
+   }
+   
    aside .menu span{
       display: none;
    }
+   
 
    aside .menu ul{
       display: none;
+   }
+
+   aside .menu span.active{
+      margin-left: auto;
+      margin-right: auto;
+      font-family: Helvetica;
+      font-size: 12px;
+      color: #878787;
+      line-height: 18px;
+      display: block;
+   }
+
+   aside .menu ul.active{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+   }
+   
+   aside .menu  li.active{
+      cursor: pointer;
+      padding-top: 16px;
+      color: #FFF;
+      text-decoration: none;
+      font: 14px/22px Helvetica;
+   }
+   
+   aside .menu li:first-child{
+      padding-top: 18px;
+   }
+   
+   aside .menu li:last-child{
+      display: flex;
    }
 
    aside .img-menu img{
@@ -343,4 +413,6 @@ aside .img-menu img.active{
       display: none;
    }
 
+   
+   
 }
