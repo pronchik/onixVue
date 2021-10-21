@@ -161,14 +161,14 @@ nav .marker .third-marker  {
 }
 
 nav .marker .fourth-marker{
-   margin-left: 325px;
+   margin-left: 245px;
    background: #FFC200;
    width: 55px;
    height: 2px;
 }
 
 nav .marker span:last-child{
-   margin-left: 245px;
+   margin-left: 325px;
    background: #FFC200;
    width: 55px;
    height: 2px;
