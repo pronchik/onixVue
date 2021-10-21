@@ -77,35 +77,11 @@ const markers = document.querySelectorAll('.marker span')
 
 
 function activity1(){
-  function myFunction(e) {
-    let elems = document.querySelectorAll(".active1");
-    [].forEach.call(elems, function(el) {
-      el.classList.remove("active1");
-    });
-  }
-  myFunction();
-  const activity1 = document.getElementsByClassName('activity')[0];
-  activity1.classList.toggle('active1');
-
-  const message = document.getElementsByClassName('message');
-  message[0].classList.toggle('active1');
-  message[1].classList.toggle('active1');
-  message[2].classList.toggle('active1');
-
-  const tip = document.getElementsByClassName('tip');
-  tip[0].classList.toggle('active1');
-
-
-
-  const select = document.getElementsByTagName("span");
-  for(let i = 15 ; i < 20; i++){
-    if(i == 17){
-      select[i].style.display = 'block';
-    }
-    else{
-      select[i].style.display = 'none';
-    }
-  }
+  const markers = document.querySelectorAll('.marker span')[2]
+ const tabs = document.querySelectorAll('.content>div')[2]
+markers.style.display = 'block'
+     tab.classList.add('active1')
+   }
 }
 
 
