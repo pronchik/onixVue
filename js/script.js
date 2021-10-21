@@ -63,7 +63,7 @@ function fun1() {
   }
 }
 
-function tasks(){
+/*function tasks(){
   function myFunction(e) {
     let elems = document.querySelectorAll(".active1");
     [].forEach.call(elems, function(el) {
@@ -183,7 +183,7 @@ function myFunction(e) {
       select[i].style.display = 'none';
     }
   }
-}
+}*/
 
 function modal(){
   const modal = document.getElementsByClassName("modal")[0];
