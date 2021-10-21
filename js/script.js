@@ -80,7 +80,7 @@ function activity1(){
   const markers = document.querySelectorAll('.marker span')[2]
  const tabs = document.querySelectorAll('.content>div')[2]
 markers.style.display = 'block'
-     tab.classList.add('active1')
+     tabs.classList.add('active1')
    }
 }
 
