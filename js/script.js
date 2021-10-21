@@ -43,7 +43,7 @@ function openMenu(){
   asd.classList.toggle('active');
 }
 
-function fun1() {
+/*function fun1() {
   let sel=document.getElementById('select').selectedIndex;
   let options=document.getElementById('select').options;
   if(options[sel].value == 'Kanban'){
@@ -61,7 +61,7 @@ function fun1() {
   if(options[sel].value == 'Activity'){
     activity();
   }
-}
+}*/
 function activity(){
 const markers = document.querySelectorAll('.marker span')
  const tabs = document.querySelectorAll('.content')
