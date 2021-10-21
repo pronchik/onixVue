@@ -70,7 +70,7 @@ const markers = document.querySelectorAll('.marker span')
      markers.forEach(marker => marker.style.display = 'none')
      tabs.forEach(tab => tab.classList.remove('active1'))
      markers[index].style.display = 'block'
-     Array.from(tabs).find(tab => tab.classList.contains('activity').classList.add('active1')
+     Array.from(tabs).find(tab => tab.classList.contains(link.innerHTML.toLowerCase())).classList.add('active1')
    }
  })
 }
