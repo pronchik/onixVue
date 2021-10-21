@@ -59,7 +59,7 @@ function openMenu(){
     files();
   }
   if(options[sel].value == 'Activity'){
-    activity();
+    
   }
 }*/
 function activity(){
@@ -75,51 +75,6 @@ const markers = document.querySelectorAll('.marker span')
  })
 }
 
-/*function tasks(){
-  function myFunction(e) {
-    let elems = document.querySelectorAll(".active1");
-    [].forEach.call(elems, function(el) {
-      el.classList.remove("active1");
-    });
-  }
-  myFunction();
-  const day1 = document.getElementsByClassName('tasks')[0];
-  day1.classList.toggle('active1');
-
-  const select = document.getElementsByTagName("span");
-  for(let i = 15 ; i < 20; i++){
-    if(i == 15){
-      select[i].style.display = 'block';
-    }
-    else{
-      select[i].style.display = 'none';
-    }
-  }
-  
-}
-
-function kanban(){
-  function myFunction(e) {
-      let elems = document.querySelectorAll(".active1");
-      [].forEach.call(elems, function(el) {
-        el.classList.remove("active1");
-      });
-    }
-  myFunction();
-  const kanban1 = document.getElementsByClassName('kanban')[0];
-  kanban1.classList.toggle('active1');
-
-  const select = document.getElementsByTagName("span");
-  for(let i = 15 ; i < 20; i++){
-    if(i == 16){
-      select[i].style.display = 'block';
-    }
-    else{
-      select[i].style.display = 'none';
-    }
-  }
-
-}*/
 
 function activity1(){
   function myFunction(e) {
@@ -151,51 +106,8 @@ function activity1(){
       select[i].style.display = 'none';
     }
   }
-}/*
-
-function files(){
-function myFunction(e) {
-    let  elems = document.querySelectorAll(".active1");
-    [].forEach.call(elems, function(el) {
-      el.classList.remove("active1");
-    });
-  }
-  myFunction();
-  const files1 = document.getElementsByClassName('files')[0];
-  files1.classList.toggle('active1');
-
-  const select = document.getElementsByTagName("span");
-  for(let i = 15 ; i < 20; i++){
-    if(i == 18){
-      select[i].style.display = 'block';
-    }
-    else{
-      select[i].style.display = 'none';
-    }
-  }
 }
 
-function calendar(){
-function myFunction(e) {
-    let elems = document.querySelectorAll(".active1");
-    [].forEach.call(elems, function(el) {
-      el.classList.remove("active1");
-    });
-  }
-  myFunction();
-  const calendar1 = document.getElementsByClassName('calendar')[0];
-  calendar1.classList.toggle('active1');
-
-  const select = document.getElementsByTagName("span");
-  for(let i = 15 ; i < 20; i++){
-    if(i == 19){
-      select[i].style.display = 'block';
-    }
-    else{
-      select[i].style.display = 'none';
-    }
-  }
-}*/
 
 function modal(){
   const modal = document.getElementsByClassName("modal")[0];
@@ -251,4 +163,5 @@ function img(){
 window.onload = () =>{
   img();
   activity1();
+  activity();
 };
