@@ -64,7 +64,7 @@ function fun1() {
 }
 function activity(){
 const markers = document.querySelectorAll('.marker span')
- const tabs = document.querySelectorAll('.content>div')
+ const tabs = document.querySelectorAll('.content>')
  document.querySelectorAll('.navigation a').forEach((link, index) => {
    link.onclick = () => {
      markers.forEach(marker => marker.style.display = 'none')
