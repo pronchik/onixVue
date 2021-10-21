@@ -1,9 +1,8 @@
 function openMenu(){
-  const aside = document.getElementsByTagName("aside")[0];
-  aside.classList.toggle('active');
+  const aside = document.querySelector('aside').classList.toggle('active');
 
-  const span = document.getElementsByTagName("span")[0];
-  span.classList.toggle('active');
+  const span = document.querySelector('.project-logo a span')
+  .classList.toggle('active');
 
   const pLogo = document.getElementById('project-logo');
   pLogo.classList.toggle('active');
@@ -11,27 +10,28 @@ function openMenu(){
   const search = document.getElementById('search');
   search.classList.toggle('active');
 
-  const userImg = document.getElementsByClassName('introduction')[0];
-  userImg.classList.toggle('active');
+  const userImg = document.querySelector('.introduction')
+  .classList.toggle('active');
 
-  const name = document.getElementsByTagName('p')[0].classList.toggle('active');
+  const name = document.querySelector('.name-position p')
+  .classList.toggle('active');
 
-  const position = document.getElementsByTagName('span')[1];
-  position.classList.toggle('active');
+  const position = document.querySelector('.name-position span')
+  .classList.toggle('active');
 
-  const circle = document.getElementsByClassName("circle")[0];
-  circle.classList.toggle('active');
+  const circle = document.querySelector('.introduction .circle')
+  .classList.toggle('active');
 
-  const statis = document.getElementsByClassName("statistic")[0];
-  statis.classList.toggle('active');
+  const statis = document.querySelector('.statistic')
+  .classList.toggle('active');
 
-  const  menu = document.getElementsByClassName('menu')[0];
-  menu.classList.toggle('active');
+  const  menu = document.querySelector('.menu')
+  .classList.toggle('active');
 
-  const img = document.getElementsByTagName("img");
-  img[3].classList.toggle('active');
-  img[4].classList.toggle('active');
-  img[5].classList.toggle('active');
+  const img = document.querySelectorAll('.img-menu img');
+  img[0].classList.toggle('active');
+  img[1].classList.toggle('active');
+  img[2].classList.toggle('active');
 
   const spanMenu = document.getElementsByTagName('span')[7];
   spanMenu.classList.toggle('active');
@@ -43,36 +43,38 @@ function openMenu(){
   asd.classList.toggle('active');
 }
 
-/*function fun1() {
-  let sel=document.getElementById('select').selectedIndex;
-  let options=document.getElementById('select').options;
-  if(options[sel].value == 'Kanban'){
-    kanban();
-  }
-  if(options[sel].value == 'Tasks'){
-    tasks();
-  }
-  if(options[sel].value == 'Calendar'){
-    calendar();
-  }
-  if(options[sel].value == 'Files'){
-    files();
-  }
-  if(options[sel].value == 'Activity'){
-    
-  }
-}*/
-function activity(){
-const markers = document.querySelectorAll('.marker span')
- const tabs = document.querySelectorAll('.content>div')
- document.querySelectorAll('.navigation a').forEach((link, index) => {
-   link.onclick = () => {
-     markers.forEach(marker => marker.style.display = 'none')
-     tabs.forEach(tab => tab.classList.remove('active1'))
-     markers[index].style.display = 'block'
-     Array.from(tabs).find(tab => tab.classList.contains(link.innerHTML.toLowerCase())).classList.add('active1')
-   }
- })
+function selectContent(){
+  const markers = document.querySelectorAll('.marker span');
+  const tabs = document.querySelectorAll('.content>div');
+  document.querySelectorAll('.navigation a').forEach((link, index) => {
+  link.onclick = () => {
+    markers.forEach(marker => marker.style.display = 'none');
+    tabs.forEach(tab => tab.classList.remove('active1'));
+    markers[index].style.display = 'block';
+    Array.from(tabs).find(tab => tab.classList.contains(link.innerHTML
+      .toLowerCase())).classList.add('active1');
+  };
+});
+}
+
+function selectContentSelector(){
+  const tabs = document.querySelectorAll('.content>div');
+  let sel = document.getElementById('select').selectedIndex;
+  let options = document.getElementById('select').options;
+
+  tabs.forEach(tab => tab.classList.remove('active1'));
+  Array.from(tabs).find(tab => tab.classList.contains(options[sel].value
+    .toLowerCase())).classList.add('active1');
+
+}
+
+function selectActivity(){
+  const markerActivity = document.querySelectorAll('.marker span.third-marker');
+  const tab = document.querySelectorAll('.content .activity');
+
+  tab[0].classList.add('active1');
+  markerActivity[0].style.display = 'block';
+
 }
 
 function modal(){
@@ -108,25 +110,18 @@ function modal(){
 }
 
 function img(){
-  const img1 = document.getElementsByTagName('img');
-  const log = document.getElementsByTagName("span")[8];
+  const pictures = document.querySelectorAll('.pictures img');
+  const log = document.querySelectorAll('.notifications span')[0];
 
-  img1[14].onclick = () =>{
-    log.innerText = '0';
-  };
-  img1[15].onclick = function(){
-    log.innerText = '1';
-  };
-  img1[16].onclick = function(){
-    log.innerText = '2';
-  };
-  img1[17].onclick = function(){
-    log.innerText = '3';
-  };
-
+  pictures.forEach((picture, index) => {
+    picture.onclick = () => {
+      log.innerText = index;
+    };
+  });
 }
 
 window.onload = () =>{
   img();
-  activity();
+  selectContent();
+  selectActivity();
 };
