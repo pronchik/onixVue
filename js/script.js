@@ -75,16 +75,6 @@ const markers = document.querySelectorAll('.marker span')
  })
 }
 
-
-function activity1(){
-  const markers = document.querySelectorAll('.marker span')[2]
- const tabs = document.querySelectorAll('.content>div')[2]
-markers.style.display = 'block'
-     tabs.classList.add('active1')
-   }
-}
-
-
 function modal(){
   const modal = document.getElementsByClassName("modal")[0];
 
@@ -138,6 +128,5 @@ function img(){
 
 window.onload = () =>{
   img();
-  activity1();
   activity();
 };
